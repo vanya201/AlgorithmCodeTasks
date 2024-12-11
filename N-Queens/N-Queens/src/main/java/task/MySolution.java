@@ -18,6 +18,7 @@ public class MySolution implements Solution {
         return results;
     }
 
+    //O(n!)
     private void backtrack(int row, int n, char[][] board, Set<Integer> cols,
                            Set<Integer> diag1, Set<Integer> diag2, List<List<String>> results) {
         if (row == n) {
@@ -43,6 +44,7 @@ public class MySolution implements Solution {
         }
     }
 
+    //O(n^2)
     private List<String> constructBoard(char[][] board) {
         List<String> result = new ArrayList<>();
         for (char[] row : board)
