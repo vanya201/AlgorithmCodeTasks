@@ -27,7 +27,7 @@ public class ASearchSolution implements Solution {
 
         //O(nlog(n))
         GraphPath<Vertex, ComplexEdge> graphPath = dijkstraSearchSolution.search(graph, start, end);
-        //TODO
+        //TODO replace this method, need special method
 
         //O(m)
         for (ComplexEdge edge : graph.edgeSet()) {
