@@ -20,7 +20,6 @@ public class Task {
         this.aSearchSolution = new ASearchSolution();
         this.dijkstraSearchSolution = new DijkstraSearchSolution();
         initGraph();
-
     }
 
     private void initGraph() {
@@ -40,8 +39,8 @@ public class Task {
 
     @AfterEach
     public void tearDown() {
-        this.mySolution = null;
-        this.bestSolution = null;
+        this.aSearchSolution = null;
+        this.dijkstraSearchSolution = null;
         graph = null;
     }
 }
