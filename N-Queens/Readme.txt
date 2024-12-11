@@ -16,3 +16,4 @@ Output: [["Q"]]
 
 Solutions:
 My solution uses extra memory for better performance, but deleting and inserting a hash set takes O(n) in the worst case. A better solution does not use memory, but it does take into account that there may be extra work during in validation method as it traverses rows from top to bottom.
+O(n!) since it is comparable to a sequence of n cells into which n cells are inserted. and miss n^2
