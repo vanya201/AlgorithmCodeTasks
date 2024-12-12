@@ -4,6 +4,7 @@ import java.util.*;
 
 public class BestSolution implements Solution {
 
+    //O(n!)
     public List<List<String>> solveNQueens(int n) {
         char[][] board = new char[n][n];
         for (int i = 0; i < n; i++)
@@ -14,6 +15,7 @@ public class BestSolution implements Solution {
         return res;
     }
 
+    //O(n)
     private boolean validate(char[][] board, int row, int col) {
         int duprow = row;
         int dupcol = col;
@@ -40,6 +42,7 @@ public class BestSolution implements Solution {
         return true;
     }
 
+    //O(n!)
     private void dfs(int col, char[][] board, List < List < String >> res) {
         if (col == board.length) {
             res.add(construct(board));
@@ -56,7 +59,7 @@ public class BestSolution implements Solution {
     }
 
 
-
+   //O(n^2)
     private List < String > construct(char[][] board) {
         List < String > res = new LinkedList < String > ();
         for (int i = 0; i < board.length; i++) {

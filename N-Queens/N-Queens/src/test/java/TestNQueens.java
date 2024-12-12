@@ -12,6 +12,7 @@ public class TestNQueens {
 
     private Solution mySolution;
     private Solution bestSolution;
+    private final int n = 8;
 
     @BeforeEach
     public void setUp() {
@@ -21,7 +22,6 @@ public class TestNQueens {
 
     @Test
     public void testMySolution() {
-        int n = 8;
         long startTime = System.nanoTime();
         List<List<String>> results = mySolution.solveNQueens(n);
         long endTime = System.nanoTime();
@@ -34,7 +34,6 @@ public class TestNQueens {
 
     @Test
     public void testBestSolution() {
-        int n = 8;
         long startTime = System.nanoTime();
         List<List<String>> results = bestSolution.solveNQueens(n);
         long endTime = System.nanoTime();
@@ -44,7 +43,6 @@ public class TestNQueens {
         assertEquals(92, results.size(), "Number of solutions for n=4 should be 2");
         System.out.printf("Time execution: %.3f ms%n for testBestSolution",  executionTime);
     }
-
 
     @AfterEach
     public void tearDown() {

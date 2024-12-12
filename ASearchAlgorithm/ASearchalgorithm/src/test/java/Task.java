@@ -36,7 +36,7 @@ public class Task {
     @Test
     public void testASearchSolution() {
         long startTime = System.nanoTime();
-        GraphPath<Vertex, ComplexEdge> path = aSearchSolution.search(graph, start, end); //TODO
+        GraphPath<Vertex, ComplexEdge> path = aSearchSolution.search(graph, start, end); //TODO replace method
         long endTime = System.nanoTime();
         double executionTime = (endTime - startTime) / 1_000_000.0;
 

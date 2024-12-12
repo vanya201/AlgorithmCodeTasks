@@ -4,6 +4,7 @@ import java.util.*;
 
 public class MySolution implements Solution {
 
+    //O(n!)
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> results = new ArrayList<>();
         char[][] board = new char[n][n];
