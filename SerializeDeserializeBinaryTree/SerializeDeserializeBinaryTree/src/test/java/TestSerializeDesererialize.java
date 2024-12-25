@@ -2,6 +2,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import task.MySolution;
+import task.Solution;
 import task.TreeNode;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -9,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestSerializeDesererialize {
 
-    private final MySolution solution = new MySolution();
+    private final Solution solution = new MySolution();
     private TreeNode testRoot;
 
     @BeforeEach
