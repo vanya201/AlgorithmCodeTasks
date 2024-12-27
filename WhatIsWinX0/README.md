@@ -1,0 +1,1 @@
+![X0](https://relax.com.ua/wp-content/media/kiew/2013/11/krestiki-noliki.jpg)
