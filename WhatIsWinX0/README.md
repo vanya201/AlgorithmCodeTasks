@@ -1,1 +1,2 @@
 ![X0](https://relax.com.ua/wp-content/media/kiew/2013/11/krestiki-noliki.jpg)
+If both tic-tac-toe players play perfectly (without mistakes, following the optimal strategy), then the game always ends in a draw.
